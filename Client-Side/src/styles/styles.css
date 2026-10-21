@@ -1,0 +1,147 @@
+@import "../../node_modules/@syncfusion/ej2/tailwind3.css";
+@import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/document-editor/index.css";
+@import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/document-editor-container/index.css";
+@import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/drop-down-base/index.css";
+@import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/button/index.css";
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #f8fafc;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.benchmark-shell {
+    height: 100vh;
+    padding: 16px;
+    box-sizing: border-box;
+    background: #f8fafc;
+}
+
+/* Toolbar */
+
+.toolbar-panel {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+.toolbar-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* Main Layout */
+
+.editor-layout {
+    display: flex;
+    gap: 8px;
+    height: calc(100vh - 130px);
+}
+
+/* Editor Section */
+
+.editor-panel {
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Metrics Panel */
+
+.metrics-panel {
+    width: 240px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.metrics-header {
+    background: #4f46e5;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 18px;
+}
+
+.metrics-body {
+    padding: 10px;
+}
+
+.metric-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+}
+
+.metric-name {
+    color: #334155;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.metric-value {
+    color: #4f46e5;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Empty State */
+
+.empty-state {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.empty-state img {
+    width: 90px;
+    height: auto;
+}
+
+.empty-state-text {
+    font-size: 14px;
+    color: #94a3b8;
+    text-align: center;
+    max-width: 500px;
+    line-height: 1.5;
+}
+
+/* Syncfusion tweaks */
+
+.e-dropdownlist {
+    min-width: 180px;
+}
+
+.e-btn {
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Document Editor */
+
+.e-documenteditorcontainer {
+    font-family: "Segoe UI", sans-serif;
+}
+.metrics-header,
+.metric-name,
+.metric-value {
+    font-family: "Segoe UI", sans-serif !important;
+}

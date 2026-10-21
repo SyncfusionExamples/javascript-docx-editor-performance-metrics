@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Syncfusion TypeScript DOCX Editor</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Syncfusion TypeScript DOCX Editor" />
+    <meta name="author" content="Syncfusion" />
+    <link rel="shortcut icon" href="resources/favicon.ico" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="benchmark-shell">
+
+        <div class="toolbar-panel">
+
+            <input id="documentSize" />
+
+            <button id="loadBtn">Load Data</button>
+            <button id="destroyBtn">Reset</button>
+
+            <button id="downloadBtn" disabled>
+                Download
+            </button>
+
+            <button id="rtfBtn" disabled>
+                Export RTF
+            </button>
+
+            <button id="htmlBtn" disabled>
+                Export HTML
+            </button>
+
+            <button id="pdfBtn" disabled>
+                Export PDF
+            </button>
+
+        </div>
+
+        <div class="editor-layout">
+
+            <div class="editor-panel">
+
+                <div id="emptyState" class="empty-state">
+
+                    <img src="./resources/empty-state.svg">
+
+                    <div>
+                        Select a document size and click
+                        Load Data to start performance testing.
+                    </div>
+
+                </div>
+
+                <div id="container" style="display:none;height:100%;">
+                </div>
+
+            </div>
+
+            <div class="metrics-panel">
+
+                <div class="metrics-header">
+                    Performance Metrics
+                </div>
+
+                <div class="metrics-body">
+
+                    <div class="metric-card">
+                        <div class="metric-name">
+                            Component Load
+                        </div>
+                        <div id="componentLoad" class="metric-value">
+                            0 ms
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-name">
+                            Document Open
+                        </div>
+                        <div id="documentOpen" class="metric-value">
+                            0 ms
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-name">
+                            Download
+                        </div>
+                        <div id="download" class="metric-value">
+                            0 ms
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-name">
+                            RTF Export
+                        </div>
+                        <div id="rtfExport" class="metric-value">
+                            0 ms
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-name">
+                            HTML Export
+                        </div>
+                        <div id="htmlExport" class="metric-value">
+                            0 ms
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-name">
+                            PDF Export
+                        </div>
+                        <div id="pdfExport" class="metric-value">
+                            0 ms
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
